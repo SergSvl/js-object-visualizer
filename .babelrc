@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "@babel/preset-env", // Без каких-либо параметров конфигурации @ babel / preset-env ведет себя точно так же, как @ babel / preset-latest (или @ babel / preset-es2015, @ babel / preset-es2016 и @ babel / preset-es2017 вместе)
+    // ["env", { "modules": false }]
+  ],
+  "plugins": [
+    // Stage 3
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}
