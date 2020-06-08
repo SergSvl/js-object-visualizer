@@ -1,4 +1,4 @@
-{
+module.exports = {
   "root": true,
   "env": {
     "browser": true,
@@ -27,5 +27,8 @@
     "prettier/prettier": ["error", {
       "endOfLine":"auto"
     }],
-  }
+    "vue/no-parsing-error": ["error", {
+      "x-invalid-end-tag": true,
+    }],
+  },
 }
