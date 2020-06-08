@@ -13,42 +13,36 @@
 </template>
 
 <script>
-  import Header from './components/Header'
-  import Footer from './components/Footer'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-  export default {
-    name: 'app',
+export default {
+  name: 'app',
 
-    components: {
-      Header,
-      Footer,
-    },
+  components: {
+    Header,
+    Footer
+  },
 
-    data () {
-      return {
+  data() {
+    return {}
+  },
 
-      }
-    },
+  methods: {},
 
-    methods: {
+  updated: function() {},
 
-    },
-
-    updated: function(){
-
-    },
-
-    mounted: function(){
-      // console.log('devServer: ', this.devServer);
-      // console.log('BASE_URL: ', this.$router.base);
-      // console.log('NODE_ENV: ', this.$store.strict);
-      // console.log('ENV: ', this.$store.env);
-      // console.log('BASE_URL: ', this.$store.base);
-      // console.log('process: ', this.$store.process);
-    },
+  mounted: function() {
+    // console.log('devServer: ', this.devServer);
+    // console.log('BASE_URL: ', this.$router.base);
+    // console.log('NODE_ENV: ', this.$store.strict);
+    // console.log('ENV: ', this.$store.env);
+    // console.log('BASE_URL: ', this.$store.base);
+    // console.log('process: ', this.$store.process);
   }
+}
 </script>
 
 <style lang="less">
-  @import "~less/app" // файл app.less, ~less - это алиас пути
+@import '~less/app'; // файл app.less, ~less - это алиас пути
 </style>

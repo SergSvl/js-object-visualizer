@@ -2,77 +2,29 @@
   <div class="header navbar navbar-fixed-top">
     <div class="header-inner">
       <!-- BEGIN LOGO -->
-      <img v-if="!homeBtn" src="/assets/img/logo.png" width="37" height="50" alt="logo" class="logo_borders img-responsive">
-      <router-link v-else class="navbar-brand" :to="{name:'home'}" target="_self">
-        <img title='Перейти на главную страницу портала' src="/assets/img/logo.png" width="37" height="50" alt="logo" class="logo_borders img-responsive">
-      </router-link>
       <div class="logo_text_portal"></div>
       <!-- END LOGO -->
-      <!-- <div class="navbar_icons">
-        <!-- BEGIN TOP NAVIGATION MENU -- >
-        <ul class="portal_home nav navbar-nav pull-right">
-          <!-- BEGIN USER LOGIN DROPDOWN -- >
-          <li class="dropdown user" style="padding-top:3px; padding-bottom:4px;" title="О портале">
-            <router-link to="/about" class="dropdown-toggle">
-              <span class="about_mnu">О портале</span>
-            </router-link>
-          </li>
-        </ul>
-      </div> -->
-      <div class="navbar_icons">
-        <!-- BEGIN TOP NAVIGATION MENU -->
-        <ul class="portal_home nav navbar-nav pull-right" v-if="loginBtn">
-          <!-- BEGIN USER LOGIN DROPDOWN -->
-          <li class="dropdown user" title="Вход для редактора объявлений">
-            <router-link to="/bboard/login" target="_blank" class="dropdown-toggle" @click.native="login">
-              <!-- <span class="about_mnu">На главную</span> -->
-              <span class="about_mnu"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-            </router-link>
-          </li>
-        </ul>
-        <ul class="portal_home nav navbar-nav pull-right" v-if="logoutBtn">
-          <!-- BEGIN USER LOGIN DROPDOWN -->
-          <li class="dropdown user" title="Выйти">
-            <router-link to="" class="dropdown-toggle" @click.native="out">
-              <!-- <span class="about_mnu">На главную</span> -->
-              <span class="about_mnu"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
-            </router-link>
-          </li>
-        </ul>
-        <ul class="portal_home nav navbar-nav pull-right" v-if="homeBtn">
-          <!-- BEGIN USER LOGIN DROPDOWN -->
-          <li class="dropdown user" title="Перейти на главную страницу">
-            <router-link to="/" class="dropdown-toggle">
-              <!-- <span class="about_mnu">На главную</span> -->
-              <span class="about_mnu"><i class="fa fa-home" aria-hidden="true"></i></span>
-            </router-link>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
   import Vuex from 'vuex'
-  import {store} from '../store/'
-  import {mapGetters} from 'vuex'
-  import {mapMutations} from 'vuex'
-  // import {logout} from '../library/api.js'
-  // import router from '../routes'
+  // import {store} from '../store/'
+  // import {mapGetters} from 'vuex'
+  // import {mapMutations} from 'vuex'
 
   export default {
     computed: {
-      ...mapGetters([
-        'task',
-        'tokenName',
-        'config',
-      ])
+      // ...mapGetters([
+      //   'task',
+      //   'config',
+      // ])
     },
     methods: {
-      ...mapMutations([
+      // ...mapMutations([
 
-      ])
+      // ])
     },
     beforeMount(){
     }
