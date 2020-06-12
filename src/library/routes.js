@@ -25,12 +25,14 @@ export default new VueRouter({
       path: '',
       name: "home", // это имя подставляется в router-link в тэг :to={name:"home"}
       // component: Home
+      // @ts-ignore
       component: () => import('../pages/Home')
     },
     {
       path: '*',
       name: '',
       // component: E404
+      // @ts-ignore
       component: () => import('../pages/E404')
     },
   ]

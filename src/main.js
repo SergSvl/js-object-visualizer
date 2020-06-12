@@ -4,6 +4,7 @@ import router from './library/routes'
 import Vuelidate from 'vuelidate'
 import Vuex from 'vuex'
 import {store} from './store/'
+// @ts-ignore
 import App from './App.vue'
 import ElementUI from 'element-ui';
 import { Notification, MessageBox, Message } from 'element-ui'

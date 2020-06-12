@@ -2,7 +2,7 @@
   <div class="header navbar navbar-fixed-top">
     <div class="header-inner">
       <!-- BEGIN LOGO -->
-      <div class="logo_text_portal"></div>
+      <div class="title_header">Визуализация объектов JavaScript и их свойств</div>
       <!-- END LOGO -->
     </div>
   </div>
@@ -63,7 +63,7 @@
     margin:0;border:0px;
     padding:0px;
     box-shadow:none;
-    height:60px;
+    height:50px;
   }
   .header.navbar.navbar-fixed-top{
     z-index:101;
@@ -164,15 +164,16 @@
     margin: 0px 10px;
     /* padding: 3px !important; */
   }
-  .logo_text,.logo_text_portal{
+  .logo_text,.title_header{
     color:#fefefe;
     text-align:left;
     padding-top:0px;
     -webkit-transition:.3s;
     transition:.3s;
     display:block;
-    width:80%;
-    font-size:18px;
+    /* width:80%; */
+    font-size:24px;
+    padding: 7px;
   }
   .navbar-nav>li>a{
     line-height: 20px;
@@ -183,7 +184,7 @@
   }
 
   @media screen and (max-width: 1030x){
-    .logo_text_portal {
+    .title_header {
         width: 60%!important;
     }
   }
@@ -209,7 +210,7 @@
   }
 
   @media screen and (max-width: 420px){
-    .logo_text_portal {
+    .title_header {
       font-size: 14px;
       width: 70%;
     }

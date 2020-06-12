@@ -4,18 +4,18 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    startPage: '',
+    // startPage: '',
     notifyPosition: 'top-left',
   },
   getters: {
-    startPage(state){
-      return state.startPage
-    },
+    // startPage(state){
+    //   return state.startPage
+    // },
   },
   mutations: {
-    setStartPage(state, name){
-      state.startPage = name
-    },
+    // setStartPage(state, name){
+    //   state.startPage = name
+    // },
   },
   actions: {
 

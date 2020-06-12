@@ -1,5 +1,6 @@
 <template>
   <div class="row-btn">
+    Здесь объект
     <!-- <portal-btn v-for="(item, index) in buttons"
       :key="index"
       :item="item"
@@ -15,7 +16,7 @@
     data () {
       return {
         // buttons: GetButtons,
-        taskTitle: 'Производственные задачи',
+        // taskTitle: 'Визуализация объектов JavaScript и их свойств',
       }
     },
     created(){
